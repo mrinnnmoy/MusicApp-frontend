@@ -1,11 +1,13 @@
 import "./App.css";
 import Header from "./Components/Header";
+import Hero from "./Components/Hero";
 
 function App() {
   return (
-    <div>
+    <div className="App text-white overflow-hidden">
       <Header />
-      {/* <Hero />
+      <Hero />
+      {/*
       <Experience />
       <Search />
       <Download />
