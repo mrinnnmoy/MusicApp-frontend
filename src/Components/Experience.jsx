@@ -15,7 +15,9 @@ function Experience() {
             </div>
             {/* Features */}
             <div className="feature flex items-center justify-around mt-[6rem] w-[100%]">
-
+                <Feature icon="Group 2" title="For Live Music" />
+                <Feature icon="music icon" title="For Daily Music" />
+                <Feature icon="Group 4" title="For Artists" />
             </div>
         </div>
     )
