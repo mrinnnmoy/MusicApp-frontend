@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";
 import Experience from './Components/Experience';
+import Search from "./Components/Search";
 
 function App() {
   return (
@@ -9,9 +10,9 @@ function App() {
       <Header />
       <Hero />
       <Experience />
+      <Search />
 
       {/*
-      <Search />
       <Download />
       <Footer /> */}
     </div>
