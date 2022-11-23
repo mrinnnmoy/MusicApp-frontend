@@ -1,43 +1,43 @@
 import { React, useState } from 'react';
 import DownloadAds from "./DownloadAds";
 import VisibilitySensor from "react-visibility-sensor";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 
 function Hero() {
-    const [elementsIsVisible, setElementIsVisible] = useState(false);
-    // const bg = {
-    //     true: {
-    //         left: "7rem",
-    //     },
-    //     false: {
-    //         left: "19rem",
-    //     },
-    // };
-    // const musicPlayer = {
-    //     true: {
-    //         left: "295px",
-    //     },
-    //     false: {
-    //         left: "235px",
-    //     },
-    // };
-    // const rect = {
-    //     true: {
-    //         left: "11rem",
-    //     },
-    //     false: {
-    //         left: "13rem",
-    //     },
-    // }
-    // const heart = {
-    //     true: {
-    //         left: "9rem",
-    //     },
-    //     false: {
-    //         left: "12.5rem",
-    //     },
-    // };
+    const [elementIsVisible, setElementIsVisible] = useState(false);
+    const bg = {
+        true: {
+            left: "7rem",
+        },
+        false: {
+            left: "19rem",
+        },
+    };
+    const musicPlayer = {
+        true: {
+            left: "295px",
+        },
+        false: {
+            left: "235px",
+        },
+    };
+    const rect = {
+        true: {
+            left: "11rem",
+        },
+        false: {
+            left: "13rem",
+        },
+    }
+    const heart = {
+        true: {
+            left: "9rem",
+        },
+        false: {
+            left: "12.5rem",
+        },
+    };
 
     return (
         <VisibilitySensor
@@ -67,23 +67,48 @@ function Hero() {
 
                 {/* Right side */}
                 <div className="images relative w-[50%]">
-                    <img src={require("../img/backgraphics.png")} alt="" className="absolute top-[-8rem] left-[19rem]" />
+                    <motion.img
+                        variants={bg}
+                        animate={`${elementIsVisible}`}
+                        transition={{ duration: 1, type: "ease-out" }}
+                        src={require("../img/backgraphics.png")}
+                        alt=""
+                        className="absolute top-[-8rem] left-[19rem]"
+                    />
                     <img
                         src={require("../img/p 1.png")}
                         alt=""
                         className="absolute top-[-15rem] h-[34rem] left-[13rem]"
                     />
-                    <img
+                    <motion.img
+                        variants={musicPlayer}
+                        animate={`${elementIsVisible}`}
+                        transition={{
+                            duration: 1,
+                            type: "ease-out",
+                        }}
                         src={require("../img/p 2.png")}
                         alt=""
                         className="absolute left-[235px] top-[94px] w-[175px]"
                     />
-                    <img
+                    <motion.img
+                        variants={rect}
+                        animate={`${elementIsVisible}`}
+                        transition={{
+                            type: "ease-out",
+                            duration: 1,
+                        }}
                         src={require("../img/p 3.png")}
                         alt=""
                         className="absolute w-[5rem] left-[13rem] top-[12rem]"
                     />
-                    <img
+                    <motion.img
+                        variants={heart}
+                        animate={`${elementIsVisible}`}
+                        transition={{
+                            type: "ease-out",
+                            duration: 1,
+                        }}
                         src={require("../img/p 4.png")}
                         alt=""
                         className="absolute w-[5rem] left-[12.5rem] top-[12rem]"
