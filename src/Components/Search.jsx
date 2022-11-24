@@ -2,6 +2,7 @@ import { React, useState } from "react";
 import MusicPlayer from "./MusicPlayer";
 import { motion } from "framer-motion";
 import VisibilitySensor from "react-visibility-sensor";
+
 function Search() {
     const [elementIsVisible, setElementIsVisible] = useState(false);
     const bg = {
@@ -32,7 +33,7 @@ function Search() {
         <div className="search relative h-[65rem] px-[5rem] bg-[#081730] pt-[18rem] pb-[10rem] mt-[-15rem] z-[1] flex items-center justify-between rounded-b-[5rem]">
             {/* left side */}
             <div className="left flex-1">
-                <motion.img
+                <img
                     variants={bg}
                     animate={`${elementIsVisible}`}
                     transition={{
@@ -41,7 +42,7 @@ function Search() {
                     }}
                     src={require("../img/backgraphics.png")}
                     alt=""
-                    className="absolute top-[22rem] left-[-47rem]"
+                    className="absolute top-[22rem] left-[-50rem]"
                 />
                 <motion.img
                     src={require("../img/d1.png")}
