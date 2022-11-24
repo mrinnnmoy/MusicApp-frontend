@@ -4,6 +4,7 @@ import Hero from "./Components/Hero";
 import Experience from './Components/Experience';
 import Search from "./Components/Search";
 import Download from "./Components/Download";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -13,9 +14,7 @@ function App() {
       <Experience />
       <Search />
       <Download />
-      
-      {/*
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
