@@ -60,8 +60,8 @@ function Hero() {
                     <div>
                         <span className="text-[13px]">
                             Download now on IOS and Android
-                            <DownloadAds />
-                        </span>
+                        </span>    
+                        <DownloadAds />                        
                     </div>
                 </div>
 

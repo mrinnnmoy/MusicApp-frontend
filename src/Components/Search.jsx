@@ -5,14 +5,6 @@ import VisibilitySensor from "react-visibility-sensor";
 
 function Search() {
     const [elementIsVisible, setElementIsVisible] = useState(false);
-    const bg = {
-        true: {
-            left: "-44rem",
-        },
-        false: {
-            left: "-50rem",
-        },
-    };
     const redimg = {
         true: {
             left: "18rem",
@@ -34,12 +26,6 @@ function Search() {
             {/* left side */}
             <div className="left flex-1">
                 <img
-                    variants={bg}
-                    animate={`${elementIsVisible}`}
-                    transition={{
-                        duration: 1,
-                        type: "ease-out",
-                    }}
                     src={require("../img/backgraphics.png")}
                     alt=""
                     className="absolute top-[22rem] left-[-50rem]"

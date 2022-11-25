@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function CenterMenu() {
     const liStyle = "mr-[3rem] hover:cursor-pointer";

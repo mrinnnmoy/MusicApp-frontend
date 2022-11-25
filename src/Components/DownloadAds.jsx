@@ -6,8 +6,12 @@ function DownloadAds() {
     return (
         <div className="download">
             <div className="download_images flex">
-                <img src={require("../img/App Store.png")} alt="" className={downloadImgStyle + `mr-[2rem]`} />
-                <img src={require("../img/Google Play.png")} alt="" className={downloadImgStyle} />
+                <img src={require("../img/App Store.png")}
+                    alt=""
+                    className={downloadImgStyle + `mr-[2rem]`} />
+                <img src={require("../img/Google Play.png")}
+                    alt=""
+                    className={downloadImgStyle} />
             </div>
         </div>
     )
